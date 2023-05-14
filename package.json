@@ -21,8 +21,7 @@
     "discord"
   ],
   "engines": {
-    "node": ">=16.x",
-    "npm": ">=8.x"
+    "node": ">=18.x"
   },
   "author": "memories-of-onj",
   "license": "Apache-2.0",
