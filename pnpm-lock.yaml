@@ -7,6 +7,9 @@ dependencies:
   '@sapphire/framework':
     specifier: ^4.4.3
     version: 4.4.3
+  '@sapphire/pieces':
+    specifier: ^3.6.3
+    version: 3.6.3
   '@sapphire/plugin-i18next':
     specifier: ^5.0.3
     version: 5.0.3
