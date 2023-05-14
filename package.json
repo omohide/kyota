@@ -8,7 +8,7 @@
     "build:clean": "rimraf dist",
     "build:swc": "swc src --only **/*.ts -d dist",
     "start": "run-s start:*",
-    "start:build": "pnpm build",
+    "start:build": "pnpm run build",
     "start:public": "node scripts/public.js",
     "start:node": "node ."
   },
@@ -21,7 +21,7 @@
     "discord"
   ],
   "engines": {
-    "node": ">=17.x"
+    "node": ">=16.x"
   },
   "author": "memories-of-onj",
   "license": "Apache-2.0",
