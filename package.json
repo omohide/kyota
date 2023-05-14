@@ -7,9 +7,9 @@
     "build": "run-s build:*",
     "build:clean": "rimraf dist",
     "build:swc": "swc src --only **/*.ts -d dist",
+    "build:public": "node scripts/public.js",
     "start": "run-s start:*",
     "start:build": "pnpm run build",
-    "start:public": "node scripts/public.js",
     "start:node": "node ."
   },
   "repository": {
@@ -50,5 +50,8 @@
     "discord.js": "14.x",
     "dotenv": "^16.0.3",
     "fs-extra": "^11.1.1"
+  },
+  "volta": {
+    "node": "16.20.0"
   }
 }
