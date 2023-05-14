@@ -1,0 +1,11 @@
+{
+  "in_guild": "このコマンドはギルド内でのみ使用できます",
+  "cant_get_roles": "持っているロールを取得できないため、権限を確認できません",
+  "unexpected_error": "予期しないエラーが発生しました",
+  "subcommand_not_specified": "サブコマンドが指定されていません",
+  "cant_get_member": "メンバーを取得できませんでした",
+  "unknown_subcommand": "未知のサブコマンドが指定されました",
+  "cannot_yourself": "この操作は自分自身には行えません",
+  "unable_bot_permissions": "ボット自身の権限が確認できません",
+  "necessary_permissions": "ボットにはこの操作を行うために必要な権限がありません"
+}

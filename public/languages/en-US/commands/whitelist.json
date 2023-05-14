@@ -1,0 +1,12 @@
+{
+  "description": "Manage server whitelists",
+  "add_subcommand_description": "Add a member to the whitelist",
+  "remove_subcommand_description": "Remove a member from the whitelist",
+  "add_subcommand_member_options_description": "Members to add to the whitelist",
+  "remove_subcommand_member_options_description": "Members to be removed from the whitelist",
+  "do_not_have_whitelist_manage_role": "I do not have a role that can manage the whitelist",
+  "member_not_whitelisted": "The member is not on the whitelist",
+  "member_already_whitelisted": "The member is already on the whitelist",
+  "add_subcommand_success": "Added member to whitelist",
+  "remove_subcommand_success": "Member removed from whitelist"
+}

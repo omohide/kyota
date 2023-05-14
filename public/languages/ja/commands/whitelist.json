@@ -1,0 +1,12 @@
+{
+  "description": "サーバーのホワイトリストを管理します",
+  "add_subcommand_description": "ホワイトリストにメンバーを追加する",
+  "remove_subcommand_description": "ホワイトリストからメンバーを削除する",
+  "add_subcommand_member_options_description": "ホワイトリストに追加するメンバー",
+  "remove_subcommand_member_options_description": "ホワイトリストから削除するメンバー",
+  "member_not_whitelisted": "そのメンバーはホワイトリストには含まれていません",
+  "member_already_whitelisted": "そのメンバーはすでにホワイトリストに追加されています",
+  "do_not_have_whitelist_manage_role": "ホワイトリストを管理できるロールを持っていません",
+  "add_subcommand_success": "ホワイトリストにメンバーを追加しました",
+  "remove_subcommand_success": "ホワイトリストからメンバーが削除されました"
+}

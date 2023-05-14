@@ -1,0 +1,4 @@
+{
+  "pong": "Pong! Took me {{latency}}ms to reply",
+  "description": "Check the response from the bot"
+}

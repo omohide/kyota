@@ -1,0 +1,11 @@
+{
+  "in_guild": "This command can only be used within the guild",
+  "cant_get_roles": "Can't get the roles you have, so can't check your permissions",
+  "unexpected_error": "An unexpected error has occurred",
+  "subcommand_not_specified": "Subcommand not specified",
+  "cant_get_member": "Could not retrieve member",
+  "unknown_subcommand": "Unknown subcommand specified",
+  "cannot_yourself": "This operation cannot be performed on yourself",
+  "unable_bot_permissions": "Unable to confirm bot permissions",
+  "necessary_permissions": "The bot does not have the necessary permissions to perform this operation"
+}
