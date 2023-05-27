@@ -14,7 +14,7 @@ export class WhitelistCommand extends Command {
   // TODO: hard-coding
   static readonly #WHITELIST_MEMBER_ROLE = '1040823093414866984' as const satisfies string;
 
-  override async registerApplicationCommands(registry: Command.Registry): Promise<void> {
+  override registerApplicationCommands(registry: Command.Registry): void {
     registry.registerChatInputCommand(builder => (
       builder
         .setName(this.name)
@@ -71,11 +71,6 @@ export class WhitelistCommand extends Command {
         return;
       }
 
-      if (!hasAnyKeys(roles, ...this.constructor.#WHITELIST_MANAGE_ROLES)) {
-        await interaction.reply(await resolveKey(interaction, 'commands/whitelist:do_not_have_whitelist_manage_role'));
-
-        return;
-      }
 
       if (!interaction.inGuild()) {
         await interaction.reply(await resolveKey(interaction, 'common/command:in_guild'));

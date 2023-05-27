@@ -4,7 +4,7 @@ import { resolveKey } from '@sapphire/plugin-i18next';
 import { formatI18n } from '@/utils/i18n';
 
 export class PingCommand extends Command {
-  override async registerApplicationCommands(registry: Command.Registry): Promise<void> {
+  override registerApplicationCommands(registry: Command.Registry): void {
     registry.registerChatInputCommand(builder => (
       builder
         .setName(this.name)
