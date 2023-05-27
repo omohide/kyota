@@ -14,7 +14,7 @@ export class WhitelistCommand extends Command {
   // TODO: hard-coding
   static readonly #WHITELIST_MEMBER_ROLE = '1040823093414866984' as const satisfies string;
 
-  override async registerApplicationCommands(registry: Command.Registry) {
+  override async registerApplicationCommands(registry: Command.Registry): Promise<void> {
     registry.registerChatInputCommand(builder => (
       builder
         .setName(this.name)
