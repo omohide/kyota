@@ -6,8 +6,6 @@ import { hasAnyKeys } from '@/utils/hasAnyKeys';
 import { formatI18n } from '@/utils/i18n';
 
 export class WhitelistCommand extends Command {
-  readonly ['constructor'] = WhitelistCommand;
-
   // TODO: hard-coding
   static readonly #WHITELIST_MANAGE_ROLES: readonly string[] = ['1042345934249545779'];
 
@@ -71,6 +69,11 @@ export class WhitelistCommand extends Command {
         return;
       }
 
+      if (!hasAnyKeys(roles, ...WhitelistCommand.#WHITELIST_MANAGE_ROLES)) {
+        await interaction.reply(await resolveKey(interaction, 'commands/whitelist:do_not_have_whitelist_manage_role'));
+
+        return;
+      }
 
       if (!interaction.inGuild()) {
         await interaction.reply(await resolveKey(interaction, 'common/command:in_guild'));
@@ -112,7 +115,7 @@ export class WhitelistCommand extends Command {
         return;
       }
 
-      const whitelistMemberRoleId = this.constructor.#WHITELIST_MEMBER_ROLE;
+      const whitelistMemberRoleId = WhitelistCommand.#WHITELIST_MEMBER_ROLE;
 
       switch (subCommand) {
         case 'add': {
