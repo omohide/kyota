@@ -6,6 +6,7 @@
   "cant_get_member": "Could not retrieve member",
   "unknown_subcommand": "Unknown subcommand specified",
   "cannot_yourself": "This operation cannot be performed on yourself",
+  "cannot_be_done_against_bots": "Cannot be done against bots",
   "unable_bot_permissions": "Unable to confirm bot permissions",
   "necessary_permissions": "The bot does not have the necessary permissions to perform this operation"
 }

@@ -92,6 +92,12 @@ export class WhitelistCommand extends Command {
         return;
       }
 
+      if (member.user.bot) {
+        await interaction.reply(await resolveKey(interaction, 'common/command:cannot_be_done_against_bots'));
+
+        return;
+      }
+
       const { me } = interaction.guild?.members ?? {};
 
       if (!me) {

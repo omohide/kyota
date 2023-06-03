@@ -6,6 +6,7 @@
   "cant_get_member": "メンバーを取得できませんでした",
   "unknown_subcommand": "未知のサブコマンドが指定されました",
   "cannot_yourself": "この操作は自分自身には行えません",
+  "cannot_be_done_against_bots": "ボットに対してはできません",
   "unable_bot_permissions": "ボット自身の権限が確認できません",
   "necessary_permissions": "ボットにはこの操作を行うために必要な権限がありません"
 }
