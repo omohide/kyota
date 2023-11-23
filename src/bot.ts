@@ -1,9 +1,13 @@
+import '@/patch';
+
 import { SapphireClient } from '@sapphire/framework';
 import { GatewayIntentBits } from 'discord.js';
 import { config as configDotenv } from 'dotenv';
 
 import { env } from '@/utils/env';
 import { fetchLanguage } from '@/utils/i18n';
+
+import '@/server';
 
 import '@sapphire/plugin-i18next/register';
 
